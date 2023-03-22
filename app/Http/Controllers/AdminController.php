@@ -33,8 +33,10 @@ class AdminController extends Controller
     }
     public function table()
     {
+
         $data = Category::all();
         return view('category.table', compact('data'));
+        
     }
     public function edit($id){
         $data=Category::find($id);

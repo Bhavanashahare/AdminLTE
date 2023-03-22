@@ -15,7 +15,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table class="table table-bordered" id="data">
+                            <table class="table table-bordered" id="dataTable">
                                 <thead>
                                     <tr>
                                         <th style="width: 10px">ID</th>
@@ -30,7 +30,7 @@
                                             <td> {{ $d->id }}</td>
                                             <td> {{ $d->title }}</td>
                                             <td>
-                                                @if ($d->status == 0)
+                                                @if ($d->status == 1)
                                                     <span class="badge badge-success">active</span>
                                                 @else
                                                     <span class="badge badge-danger">deactive</span>
@@ -79,7 +79,10 @@
 
 $(document).ready(function() {
 
-    $('#dataTable').DataTable();
+    $('#dataTable').DataTable({
+        "pageLength" :3
+
+    });
 });
 </script>
   @endpush

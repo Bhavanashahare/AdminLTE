@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function create()
     {
-        $categories = Category::all();
+        $categories = Category::where('status','=',1)->get();
         // dd($categories);
 
         return view('product.create', compact('categories'));

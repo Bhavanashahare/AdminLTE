@@ -87,8 +87,11 @@
 
 <script>
 $(document).ready( function () {
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+        "pageLength" :3
+    });
 } );
 </script>
 @endpush
+
 {{-- end --}}

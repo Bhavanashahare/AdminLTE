@@ -38,8 +38,8 @@
                                             *</span></label>
                                     <select class="form-control" name="status">
                                         <option value="">Select status Type</option>
-                                        <option value="0">Active</option>
-                                        <option value="1">Deactive</option>
+                                        <option value="1">Active</option>
+                                        <option value="0">Deactive</option>
                                     </select>
 
 
